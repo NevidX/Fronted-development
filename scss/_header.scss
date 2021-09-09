@@ -1,6 +1,8 @@
 .header {
 	width: 100%;
+	position: relative;
 	.header__content {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -26,6 +28,9 @@
 		.content__buttons {
 			display: flex;
 			align-items: center;
+			@media (max-width: $md1) {
+				display: none;
+			}
 		}
 	}
 }

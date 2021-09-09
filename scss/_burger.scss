@@ -1,0 +1,93 @@
+.burger__trigger {
+	display: none;
+}
+@media (max-width: $md1) {
+	.burger__trigger {
+		display: block;
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		right: 5%;
+		bottom: 30%;
+		&:before {
+			content: "";
+			display: block;
+			top: 0;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			transition: all 0.3s ease;
+		}
+		span {
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			margin-top: 8px;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			transition: all 0.3s ease;
+		}
+	}
+
+	.active {
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		transition: all 0.1s ease;
+		&:before {
+			content: "";
+			display: block;
+			top: 0;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			transform: rotateZ(-45deg);
+			margin-top: 9px;
+			transition: all 0.3s ease;
+		}
+		span {
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			margin-top: 12px;
+			opacity: 0;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 30px;
+			height: 3px;
+			background-color: #aa0ed4;
+			transform: rotateZ(45deg);
+			margin-bottom: 13px;
+			transition: all 0.3s ease;
+		}
+	}
+
+	.burger__body {
+		overflow: hidden;
+		width: 100%;
+		transition: ease 0.4s;
+		background-color: rgba(28, 226, 233, 0.425);
+		position: absolute;
+		z-index: 1000;
+	}
+
+	.burger__content {
+		padding: 10px;
+	}
+}
