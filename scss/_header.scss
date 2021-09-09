@@ -1,6 +1,8 @@
 .header {
 	width: 100%;
 	position: relative;
+	height: 60px;
+	background: linear-gradient(360.11deg, #cb10ff02 8.75%, #a006ff81 88.63%);
 	.header__content {
 		position: relative;
 		display: flex;
@@ -18,6 +20,9 @@
 			}
 		}
 		.header__link {
+			@media (max-width: $md2) {
+				display: none;
+			}
 			&:not(:last-child) {
 				margin-right: 50px;
 			}

@@ -24,7 +24,7 @@ class BurgerGroup {
 					document.getElementById("body").style.overflow = "hidden"
 				}
 				if (!(item.classList.contains("active"))) {
-					document.getElementById("body").style.overflow = "auto"
+					document.getElementById("body").style.overflowY = "scroll"
 				}
 				if (this.#body[i].style.height === "0px") {
 					this.#body[i].style.height = this.#contentWidth;
@@ -41,6 +41,9 @@ class BurgerGroup {
 	recalc() {
 		this.#body.forEach((item, i) => {
 			this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
+			if ((getComputedStyle(this.#trigger).style.display === "none")) {
+				this.#body[i].style.height = "0";
+			}
 		})
 	}
 	/*close all Burgers*/

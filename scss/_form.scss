@@ -27,6 +27,44 @@
 }
 //=========<Кнопки>======================
 
+// НАВИГАЦИЯ
+.nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 640px;
+	margin: 0 auto;
+	@media (max-width: $md4) {
+		display: block;
+	}
+}
+.nav__column {
+}
+.nav__link {
+	a {
+		font-family: Mulish;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 200%;
+		color: #4f596a;
+		@media (max-width: $md4) {
+			font-size: 20px;
+		}
+		&:hover {
+			color: #aa0ed4;
+		}
+	}
+}
+.nav__link-head {
+	a {
+		font-weight: bold;
+		&:hover {
+			color: #4f596a;
+		}
+	}
+}
+
 //Колонки на флексе================
 //.block{
 //    display: flex;
