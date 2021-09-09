@@ -1,5 +1,25 @@
 //=========<Кнопки>======================
 
+.btn__main {
+	display: block;
+	width: 147px;
+	height: 50px;
+	border-radius: 33px;
+	background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 290%;
+	color: #ffffff;
+	text-align: center;
+}
+.btn__sign-in {
+}
+.link {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 125%;
+	color: #001a49;
+}
 //=========<Кнопки>======================
 
 //Колонки на флексе================

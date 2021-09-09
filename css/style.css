@@ -100,6 +100,75 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 
+.btn__main {
+  display: block;
+  width: 147px;
+  height: 50px;
+  border-radius: 33px;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 290%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 125%;
+  color: #001a49;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+.header .header__content .content__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .header__content .content__links .content__header-logo {
+  margin-right: 50px;
+}
+
+.header .header__content .header__link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .header__content .header__link:hover {
+  color: #aa0ed4;
+}
+
+.header .header__content .content__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   font-family: Mulish;
 }
