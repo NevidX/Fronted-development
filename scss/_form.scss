@@ -12,10 +12,10 @@
 	color: #ffffff;
 	text-align: center;
 	transition: all linear 0.3s;
-	&:hover {
-		transform: scale(1.01);
-		box-shadow: 0px 0px 10px 2px #a90ed457;
-	}
+}
+.btn__main:hover {
+	transform: scale(1.01);
+	box-shadow: 0px 0px 10px 2px #a90ed457;
 }
 .btn__sign-in {
 }
@@ -64,19 +64,24 @@
 		}
 	}
 }
-
-//Колонки на флексе================
-//.block{
-//    display: flex;
-//    margin: 0 -15px;
-//    .coloumn{
-//        flex: 0 0 25%;
-//        height: 50px;
-//        width: 90px;
-//        padding: 0 15px;
-//    }
-//    .coloumn__item {
-//        border: 2px solid black;
-//        height: 50px;
-//    }
-//}
+// ТЕКСТ========================
+.title {
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 122%;
+	color: #001a49;
+}
+.intro__title {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.subtitle {
+	font-family: Mulish;
+	font-size: 20px;
+	line-height: 150%;
+	color: #4f596a;
+}
+.intro__subtitle {
+	margin-bottom: 40px;
+}

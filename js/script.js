@@ -41,10 +41,10 @@ class BurgerGroup {
 	recalc() {
 		this.#body.forEach((item, i) => {
 			this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
-			if ((getComputedStyle(this.#trigger).style.display === "none")) {
-				this.#body[i].style.height = "0";
-			}
 		})
+		// this.#trigger.forEach((item, i) => {
+		// 	if ()
+		// })
 	}
 	/*close all Burgers*/
 	close() {
