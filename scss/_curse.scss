@@ -10,6 +10,10 @@
 	border: 1px solid #e7eaeb;
 	border-radius: 21px;
 	align-items: center;
+	@media (max-width: $md3) {
+		display: block;
+		height: 100%;
+	}
 }
 .data__column {
 	width: 370px;
@@ -23,6 +27,22 @@
 	&:last-child {
 		border-right: 0px;
 		border-left: 0px;
+	}
+	@media (max-width: $md3) {
+		width: 90%;
+		border-left: 0px;
+		border-right: 0px;
+		border-top: 1px solid #e7eaeb;
+		border-bottom: 1px solid #e7eaeb;
+		&:first-child {
+			border-top: 0px;
+			border-bottom: 0px;
+		}
+		&:last-child {
+			border-top: 0px;
+			border-bottom: 0px;
+		}
+		margin: 0 auto;
 	}
 }
 .data__column-number {
@@ -56,6 +76,7 @@
 .curse__topic {
 	padding: 41px 54px 41px 46px;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	background: #fbf2ff;
 	border-radius: 21px;
@@ -96,6 +117,12 @@
 	text-align: center;
 	margin-left: 10%;
 	transition: all linear 0.3s;
+	@media (max-width: 1106px) {
+		width: 240px;
+		height: 50px;
+		font-size: 14px;
+		line-height: 350%;
+	}
 	&:hover {
 		transform: scale(1.01);
 		box-shadow: 0px 0px 10px 2px #a90ed457;

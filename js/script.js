@@ -33,17 +33,22 @@ class BurgerGroup {
 				}
 			});
 			window.addEventListener("resize", () => {
-				this.recalc();
+				let pageWidth = document.documentElement.scrollWidth;
+				if (pageWidth >= 1000) {
+					this.#body[i].style.height = "0";
+					item.classList.remove("active")
+				}
+				if (!(item.classList.contains("active"))) {
+					document.getElementById("body").style.overflowY = "scroll"
+				}
+				// this.recalc();
 			})
 		});
 	}
-	/*recalc height of elements*/
+	// recalc height of elements*/
 	recalc() {
-		this.#body.forEach((item, i) => {
-			this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
-		})
-		// this.#trigger.forEach((item, i) => {
-		// 	if ()
+		// this.#body.forEach((item, i) => {
+		// 	 this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
 		// })
 	}
 	/*close all Burgers*/
@@ -54,3 +59,4 @@ class BurgerGroup {
 	}
 }
 const myBurgerGroup = new BurgerGroup(".burger__trigger", ".burger__body", ".burger__content", "active")
+
