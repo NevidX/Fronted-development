@@ -22,8 +22,7 @@ class BurgerGroup {
 				}
 				if ((item.classList.contains("active"))) {
 					document.getElementById("body").style.overflow = "hidden"
-				}
-				if (!(item.classList.contains("active"))) {
+				} else {
 					document.getElementById("body").style.overflowY = "scroll"
 				}
 				if (this.#body[i].style.height === "0px") {
@@ -46,11 +45,11 @@ class BurgerGroup {
 		});
 	}
 	// recalc height of elements*/
-	recalc() {
-		// this.#body.forEach((item, i) => {
-		// 	 this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
-		// })
-	}
+	// recalc() {
+	// this.#body.forEach((item, i) => {
+	// 	 this.#contentWidth[i] = item.querySelector(this.#content).offsetHeight + "px";
+	// })
+	// }
 	/*close all Burgers*/
 	close() {
 		this.#body.forEach((item, i) => {
