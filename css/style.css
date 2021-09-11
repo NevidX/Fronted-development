@@ -453,6 +453,143 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.curse__data {
+  margin-top: 13.8%;
+  width: 100%;
+  max-width: 1120px;
+  height: 172px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #e7eaeb;
+  border-radius: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data__column {
+  width: 370px;
+  height: 112px;
+  border-left: 1px solid #e7eaeb;
+  border-right: 1px solid #e7eaeb;
+}
+
+.data__column:first-child {
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.data__column:last-child {
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.data__column-number {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 180%;
+  text-align: center;
+  color: #001a49;
+}
+
+.data__column-text {
+  font-family: Mulish;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: normal;
+  color: #4f596a;
+}
+
+.curse__title-block {
+  max-width: 537px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+.curse__title-block .subtitle {
+  margin-top: 4%;
+}
+
+.curse__topic {
+  padding: 41px 54px 41px 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #fbf2ff;
+  border-radius: 21px;
+}
+
+.curse__topic:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.curse__topic-logo {
+  cursor: pointer;
+}
+
+.curse__topic-info {
+  max-width: 500px;
+}
+
+.topic-info__title {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 100%;
+  color: #001a49;
+}
+
+.topic-info__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  color: #4f596a;
+}
+
+.curse__topic-duration {
+  cursor: pointer;
+  font-family: Mulish;
+  width: 278px;
+  height: 66px;
+  border-radius: 33px;
+  background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 400%;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10%;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.curse__topic-duration:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0px 0px 10px 2px #a90ed457;
+          box-shadow: 0px 0px 10px 2px #a90ed457;
+}
+
+.curse__topic-duration span {
+  display: inline-block;
+  width: 1px;
+  height: 30px;
+  margin: 0 15% 0 15%;
+  font-weight: normal;
+  font-size: 25px;
+  background: #8639b5;
+  vertical-align: middle;
+}
+
 body {
   font-family: Mulish;
   overflow-y: scroll;
