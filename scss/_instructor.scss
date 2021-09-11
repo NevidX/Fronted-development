@@ -1,0 +1,47 @@
+.instructor {
+	height: 622px;
+	padding-top: 124px;
+}
+.instructor__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: $md1) {
+		display: block;
+	}
+}
+.instructor__text-block {
+	max-width: 515px;
+}
+.instructor__logo-block {
+	position: relative;
+	width: 420px;
+	height: 382px;
+}
+.circle__yellow-instructor {
+	position: absolute;
+	top: 40px;
+	left: -25px;
+}
+.circle__photo {
+	width: 354px;
+	height: 354px;
+	position: absolute;
+	overflow: hidden;
+	top: 55px;
+	z-index: 3;
+}
+.logo-block__photo {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+.circle__under-photo {
+	position: absolute;
+	width: 132px;
+	height: 132px;
+	opacity: 1;
+	bottom: -40px;
+	right: 25px;
+}

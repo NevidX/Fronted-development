@@ -1,4 +1,4 @@
-//=========<Кнопки>======================
+//=========<BUTTONS>======================
 
 .btn__main {
 	display: block;
@@ -25,9 +25,9 @@
 	line-height: 125%;
 	color: #001a49;
 }
-//=========<Кнопки>======================
+//=========<BUTTONS>======================
 
-// НАВИГАЦИЯ
+// NAVIGATION
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -64,7 +64,7 @@
 		}
 	}
 }
-// ТЕКСТ========================
+// TEXT========================
 .title {
 	font-family: Montserrat;
 	font-weight: bold;
@@ -84,4 +84,17 @@
 }
 .intro__subtitle {
 	margin-bottom: 40px;
+}
+// DECORATION CIRCLES
+.circle__purple {
+	width: 288px;
+	height: 288px;
+	background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+	border-radius: 50%;
+}
+.circle__yellow {
+	width: 88px;
+	height: 88px;
+	background: linear-gradient(35.71deg, #ffd7a9 9.11%, #ffae70 71.64%);
+	border-radius: 50%;
 }
