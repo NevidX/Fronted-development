@@ -1,12 +1,16 @@
 .curse {
+	position: relative;
 }
 .curse__data {
+	position: relative;
+	z-index: 3;
 	margin-top: 13.8%;
 	width: 100%;
 	max-width: 1120px;
 	height: 172px;
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 	border: 1px solid #e7eaeb;
 	border-radius: 21px;
 	align-items: center;
@@ -151,4 +155,26 @@
 			margin: 0 5% 0 5%;
 		}
 	}
+}
+.circle__purple-curse {
+	position: absolute;
+	top: 20px;
+	left: -46px;
+	// top: 20%;
+	// left: -10%;
+	z-index: -1;
+}
+.circle__yellow-curse-small {
+	position: absolute;
+	top: 220px;
+	left: 156px;
+	z-index: -1;
+}
+.circle__yellow-curse-big {
+	position: absolute;
+	width: 392px;
+	height: 382px;
+	top: 272px;
+	right: -248px;
+	z-index: -1;
 }

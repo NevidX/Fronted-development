@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .container {
@@ -467,7 +468,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.curse {
+  position: relative;
+}
+
 .curse__data {
+  position: relative;
+  z-index: 3;
   margin-top: 13.8%;
   width: 100%;
   max-width: 1120px;
@@ -478,6 +485,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
   border: 1px solid #e7eaeb;
   border-radius: 21px;
   -webkit-box-align: center;
@@ -665,6 +673,29 @@ h1, h2, h3, h4, h5, h6 {
   .curse__topic-duration span {
     margin: 0 5% 0 5%;
   }
+}
+
+.circle__purple-curse {
+  position: absolute;
+  top: 20px;
+  left: -46px;
+  z-index: -1;
+}
+
+.circle__yellow-curse-small {
+  position: absolute;
+  top: 220px;
+  left: 156px;
+  z-index: -1;
+}
+
+.circle__yellow-curse-big {
+  position: absolute;
+  width: 392px;
+  height: 382px;
+  top: 272px;
+  right: -248px;
+  z-index: -1;
 }
 
 .instructor {
