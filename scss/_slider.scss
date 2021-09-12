@@ -1,0 +1,39 @@
+.reviews__slider {
+	display: flex;
+}
+.slider {
+}
+.slider__slide {
+}
+.slider__content {
+}
+.slider__block {
+	width: 550px;
+	height: 330px;
+	background: rgba(76, 0, 112, 0.195968);
+	border-radius: 20px;
+	padding: 50px 40px 40px 50px;
+}
+.slider__block-text {
+	font-family: Mulish;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.slider__block-author {
+	display: flex;
+	color: #fff;
+}
+.block-author-img {
+	margin-right: 14px;
+}
+.block-author-info {
+	padding-top: 9px;
+	line-height: 150%;
+}
+.block-author-info__name {
+	font-weight: bold;
+}
+.block-author-info__sign {
+}

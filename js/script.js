@@ -59,3 +59,58 @@ class BurgerGroup {
 }
 const myBurgerGroup = new BurgerGroup(".burger__trigger", ".burger__body", ".burger__content", "active")
 
+class Slider {
+	#slider;
+	#slides;
+	#left_btn;
+	#right_btn;
+	#FIRST_SLIDE = 1;
+	#LAST_SLIDE;
+	#sliderPos = 0;
+	#activeSliderIndex = 1;
+	constructor(slider_id, slides_class, left_btn_id, right_btn_id) {
+		this.#slider = document.getElementById(slider_id);
+		this.#slides = document.getElementsByClassName(slides_class);
+		this.#left_btn = document.getElementById(left_btn_id);
+		this.#right_btn = document.getElementById(right_btn_id);
+		this.#LAST_SLIDE = this.#slides.length;
+		this.#slider.style.transform = "translateX(0%)";
+		this.#left_btn.addEventListener("click", () => {
+			if (this.#activeSliderIndex == this.#FIRST_SLIDE) {
+				this.#activeSliderIndex = this.#LAST_SLIDE;
+				this.#sliderPos = -100 * (this.#LAST_SLIDE - 1);
+				this.#moveSlide(this.#sliderPos);
+			} else {
+				this.#activeSliderIndex -= 1;
+				this.#sliderPos += 100;
+				this.#moveSlide(this.#sliderPos);
+			}
+		});
+
+		this.#right_btn.addEventListener("click", () => {
+			if (this.#activeSliderIndex == this.#LAST_SLIDE) {
+				this.#activeSliderIndex = this.#FIRST_SLIDE;
+				this.#sliderPos = 0;
+				this.#moveSlide(this.#sliderPos);
+			} else {
+				this.#activeSliderIndex += 1;
+				this.#sliderPos -= 100;
+				this.#moveSlide(this.#sliderPos);
+			}
+		});
+	}
+	#moveSlide(X) {
+		this.#slider.style.transform = "translateX(" + X + "%)";
+	}
+
+	showSlide(id) {
+		//показать определенный слайд
+		if (id >= this.#FIRST_SLIDE && id <= this.#LAST_SLIDE) {
+			this.#activeSliderIndex = id;
+			this.#sliderPos = -100 * (this.#activeSliderIndex - 1);
+			this.#moveSlide(this.#sliderPos);
+		}
+	}
+}
+
+const slider = new Slider("slider1", "slider__slide", "left", "right");

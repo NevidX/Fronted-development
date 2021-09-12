@@ -1,6 +1,9 @@
 .instructor {
 	height: 622px;
 	padding-top: 124px;
+	@media (max-width: $md1) {
+		height: auto;
+	}
 }
 .instructor__content {
 	display: flex;
