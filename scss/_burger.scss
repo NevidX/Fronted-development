@@ -82,14 +82,20 @@
 	overflow: auto;
 	width: 100%;
 	transition: ease 0.4s;
-	background: linear-gradient(360.11deg, #a006ff81 7.63%, #cb10ff02 85.75%);
+	background-color: rgba(233, 200, 241, 0.925);
+	z-index: 10;
 	position: absolute;
-	z-index: 1000;
 }
 
 .burger__content {
 	padding: 10px;
 	padding-top: 20px;
+	.nav__link {
+		a {
+			color: black;
+			font-size: 20px;
+		}
+	}
 	.content__links {
 		display: none;
 		@media (max-width: $md2) {
