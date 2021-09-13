@@ -13,6 +13,9 @@
 	@media (max-width: $md2) {
 		display: block;
 	}
+	@media (max-width: $md4) {
+		padding-top: 15px;
+	}
 }
 .intro__block {
 	max-width: 522px;
@@ -20,6 +23,9 @@
 .intro__title {
 	font-size: 60px;
 	margin-bottom: 20px;
+	@media (max-width: $md4) {
+		font-size: 35px;
+	}
 }
 .intro__subtitle {
 	margin-bottom: 40px;
