@@ -1,11 +1,14 @@
 .slider__container {
 	width: 550px;
 	height: 330px;
-	// background-color: gray;
 	margin: 0 auto;
 	@media (max-width: $md2) {
-		width: 460px;
+		width: 440px;
 		height: 280px;
+	}
+	@media (max-width: $md3) {
+		width: 300px;
+		height: $sliderHeight;
 	}
 }
 .reviews__slider {
@@ -14,21 +17,27 @@
 }
 .slider__slide {
 	width: 100%;
-	&:not(:last-child) {
-		margin-right: 20px;
-	}
 }
 .slider__content {
+	padding: 0 10px 0 10px;
 }
 .slider__block {
-	width: 550px;
-	height: 330px;
+	width: 530px;
+	height: 100%;
 	background: rgba(76, 0, 112, 0.195968);
 	border-radius: 20px;
 	padding: 50px 40px 40px 50px;
 	@media (max-width: $md2) {
-		width: 460px;
+		width: 420px;
 		height: 280px;
+	}
+	@media (max-width: $md3) {
+		width: 400px;
+		height: 280px;
+	}
+	@media (max-width: $md3) {
+		width: 280px;
+		height: $sliderHeight;
 	}
 }
 .slider__block-text {
@@ -46,7 +55,16 @@
 	color: #fff;
 }
 .block-author-img {
+	border-radius: 50%;
 	margin-right: 14px;
+	cursor: pointer;
+	overflow: hidden;
+	img {
+		transition: transform 0.5s ease;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 }
 .block-author-info {
 	padding-top: 9px;
@@ -64,45 +82,15 @@
 	max-width: 300px;
 }
 .slider__button {
-	position: relative;
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	z-index: 3;
-	&:not(:last-child) {
-		margin-right: 50px;
+	font-size: 100px;
+	background: none;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.486);
+	transition: all 0.3s ease;
+	&:hover {
+		color: rgba(255, 255, 255, 0.753);
 	}
-	&:before {
-		content: "";
-		display: block;
-		width: 30px;
-		height: 2px;
-		background-color: white;
-		transform: rotateZ(-40deg);
-	}
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 30px;
-		height: 2px;
-		bottom: 9px;
-		background-color: white;
-		transform: rotateZ(40deg);
-	}
-	&:active:before,
-	&:active:after {
-		background-color: rgb(192, 9, 85);
-	}
-}
-
-.slider__button-right {
-	&:before {
-		content: "";
-		transform: rotateZ(40deg);
-	}
-	&:after {
-		content: "";
-		transform: rotateZ(-40deg);
+	&:active {
+		color: #9f06ff;
 	}
 }
