@@ -1089,19 +1089,34 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   border-radius: 21px;
   border: 1px solid #f1ceff;
-  padding: 26px 41px 47px 36px;
+  padding: 20px 41px 35px 36px;
+  margin-bottom: 20px;
 }
 
-.spoiler__title-triger {
+.spoiler__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .spoiler__header {
+    display: block;
+  }
+}
+
+.spoiler__header .spoiler__title {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 20px;
@@ -1109,25 +1124,49 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 7px;
 }
 
-.spoiller__arrow {
-  display: inline-block;
-  text-align: center;
-  width: 48px;
-  height: 48px;
-  font-size: 40px;
-  line-height: -1;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  padding-top: 8.5px;
-  background: linear-gradient(35.71deg, #ffd7a9 9.11%, #f5e5d9 71.64%);
+.spoiler__trigger {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #ffd7a9;
   border-radius: 50%;
-  color: #9f06ff;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 40px;
+  left: 15px;
+  top: 5px;
+  font-weight: bold;
+  color: #cd10ff;
+}
+
+.spoiler__arrow-active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.spoiler__body {
+  overflow: hidden;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.spoiler__content {
+  max-height: 350px;
+  overflow-y: auto;
 }
 
 .spoiler__content .spoiler__content-text {
   font-family: Mulish;
   font-size: 16px;
   line-height: 162%;
+  padding-top: 10px;
   color: #4f596a;
 }
 

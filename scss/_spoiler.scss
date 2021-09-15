@@ -1,0 +1,70 @@
+.qustions__spoilers {
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.spoilers__spoiler {
+	max-width: 850px;
+	height: auto;
+	background-color: white;
+	border-radius: 21px;
+	border: 1px solid #f1ceff;
+	padding: 20px 41px 35px 36px;
+	margin-bottom: 20px;
+}
+
+.spoiler__header {
+	display: flex;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	@media (max-width: $md2) {
+		display: block;
+	}
+	.spoiler__title {
+		font-family: Montserrat;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 120%;
+		margin-bottom: 7px;
+	}
+}
+.spoiler__trigger {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: #ffd7a9;
+	border-radius: 50%;
+}
+.arrow {
+	display: block;
+	position: absolute;
+	transform: rotate(270deg);
+	font-size: 40px;
+	left: 15px;
+	top: 5px;
+	font-weight: bold;
+	color: #cd10ff;
+}
+.spoiler__arrow-active {
+	transform: rotate(180deg);
+}
+.spoiler__body {
+	overflow: hidden;
+	transition: all 0.5s linear;
+}
+.spoiler__content {
+	max-height: 350px;
+	overflow-y: auto;
+	.spoiler__content-text {
+		font-family: Mulish;
+		font-size: 16px;
+		line-height: 162%;
+		padding-top: 10px;
+		color: #4f596a;
+	}
+}

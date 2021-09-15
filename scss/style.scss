@@ -9,7 +9,9 @@
 @import "_instructor";
 @import "_reviews";
 @import "_slider";
-@import "_questions"; //=====<ПОДКЛЮЧЕНИЕ СТИЛЕЙ>=================
+@import "_questions";
+@import "_spoiler";
+//=====<ПОДКЛЮЧЕНИЕ СТИЛЕЙ>=================
 body {
 	font-family: Mulish;
 	overflow-y: scroll;
