@@ -1,6 +1,42 @@
 .footer {
+	padding: 54px 0 66px 0;
+	background: #fbf2ff;
 }
-.container {
+.footer__email {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	@media (max-width: $md2) {
+		display: block;
+	}
 }
-.footer__email-sign {
+.email__logo {
+	margin-right: 80px;
+	transform: scale(0.9);
+}
+.email-input {
+	width: 100%;
+	input {
+		width: 100%;
+		font-family: Mulish;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: #4f596a;
+	}
+}
+.email-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 860px;
+	height: 66px;
+	background: #ffffff;
+	padding: 0 10px 0 40px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.0501257);
+	border-radius: 33px;
+}
+
+.btn__footer {
+	margin: 0;
 }
