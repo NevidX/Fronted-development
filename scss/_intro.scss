@@ -1,6 +1,6 @@
 .intro {
 	position: relative;
-	height: 670px;
+	min-height: 100vh;
 	@media (max-width: $md1) {
 		height: auto;
 	}

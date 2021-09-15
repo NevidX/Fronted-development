@@ -1,6 +1,7 @@
 .burger__trigger {
 	display: none;
 }
+$burgerColor: #ffffff;
 @media (max-width: $md1) {
 	.burger__trigger {
 		display: block;
@@ -16,7 +17,7 @@
 			top: 0;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			transition: all 0.3s ease;
 		}
 		span {
@@ -24,7 +25,7 @@
 			position: absolute;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			margin-top: 8px;
 		}
 		&:after {
@@ -34,7 +35,7 @@
 			bottom: 0;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			transition: all 0.3s ease;
 		}
 	}
@@ -50,7 +51,7 @@
 			top: 0;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			transform: rotateZ(-45deg);
 			margin-top: 9px;
 			transition: all 0.3s ease;
@@ -60,7 +61,7 @@
 			position: absolute;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			margin-top: 12px;
 			opacity: 0;
 		}
@@ -71,7 +72,7 @@
 			bottom: 0;
 			width: 30px;
 			height: 3px;
-			background-color: #aa0ed4;
+			background-color: $burgerColor;
 			transform: rotateZ(45deg);
 			margin-bottom: 13px;
 			transition: all 0.3s ease;
