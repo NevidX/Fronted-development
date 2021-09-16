@@ -1,45 +1,36 @@
-class Slider {
-	#slider;
-	#slide;
-	#left_btn;
-	#right_btn;
-	#firstSlide = 1;
-	#lastSlide;
-	#sliderPos = 0;
-	#activeSliderIndex = 1;
-	constructor(slider_id, slide_class, left_btn_id, right_btn_id) {
-		this.#slider = document.getElementById(slider_id);
-		this.#slide = document.getElementsByClassName(slide_class);
-		this.#left_btn = document.getElementById(left_btn_id);
-		this.#right_btn = document.getElementById(right_btn_id);
-		this.#lastSlide = this.#slide.length;
-		this.#slider.style.transform = "translateX(0%)";
-		this.#left_btn.addEventListener("click", () => {
-			if (this.#activeSliderIndex == this.#firstSlide) {
-				this.#activeSliderIndex = this.#lastSlide;
-				this.#sliderPos = -100 * (this.#lastSlide - 1);
-				this.#moveSlide(this.#sliderPos);
-			} else {
-				this.#activeSliderIndex -= 1;
-				this.#sliderPos += 100;
-				this.#moveSlide(this.#sliderPos);
-			}
-		});
+const slides = document.getElementsByClassName("slider__slide");
+const slider = document.getElementById("slider");
+const left_btn = document.getElementById("left");
+const right_btn = document.getElementById("right");
+const firstSlide = 1;
+const lastSlide = slides.length;
+let sliderPos = 0;
+let activeSliderIndex = 1;
+slider.style.transform = "translateX(0%)";
+left_btn.addEventListener("click", () => {
+	if (activeSliderIndex == firstSlide) {
+		activeSliderIndex = lastSlide;
+		sliderPos = -100 * (lastSlide - 1);
+		moveSlide(sliderPos);
+	} else {
+		activeSliderIndex -= 1;
+		sliderPos += 100;
+		moveSlide(sliderPos);
+	}
+});
 
-		this.#right_btn.addEventListener("click", () => {
-			if (this.#activeSliderIndex == this.#lastSlide) {
-				this.#activeSliderIndex = this.#firstSlide;
-				this.#sliderPos = 0;
-				this.#moveSlide(this.#sliderPos);
-			} else {
-				this.#activeSliderIndex += 1;
-				this.#sliderPos -= 100;
-				this.#moveSlide(this.#sliderPos);
-			}
-		});
+right_btn.addEventListener("click", () => {
+	if (activeSliderIndex == lastSlide) {
+		activeSliderIndex = firstSlide;
+		sliderPos = 0;
+		moveSlide(sliderPos);
+	} else {
+		activeSliderIndex += 1;
+		sliderPos -= 100;
+		moveSlide(sliderPos);
 	}
-	#moveSlide(X) {
-		this.#slider.style.transform = "translateX(" + X + "%)";
-	}
+});
+
+function moveSlide(X) {
+	slider.style.transform = "translateX(" + X + "%)";
 }
-const slider = new Slider("slider1", "slider__slide", "left", "right");
