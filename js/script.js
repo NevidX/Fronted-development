@@ -1,5 +1,5 @@
 class BurgerGroup {
-	#contentWidth = 100 + "vh";
+	#contentWidth = [];
 	#trigger;
 	#body;
 	#content;
