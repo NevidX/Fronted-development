@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,8 @@
             <div class="container">
                 <div class="header__content content">
                     <div class="content__links">
-                        <div class="content__header-logo"><img src="img/icons/Logo.svg" alt=""></div>
+                        <div class="content__header-logo"><a href="#intro"><img src="img/icons/Logo.svg" alt=""></a>
+                        </div>
                         <a href="#curse" class="link header__link">Course topics</a>
                         <a href="#reviews" class="link header__link">What students say</a>
                     </div>
@@ -61,11 +62,12 @@
                         </ul>
                     </nav>
                 </div>
+            </div>
         </header>
         <!-- MAIN S -->
         <div class="main">
             <!-- INTRO S -->
-            <div class="intro">
+            <div class="intro" id="intro">
                 <div class="intro__bg"></div>
                 <div class="container">
                     <div class="intro__content">
@@ -83,7 +85,7 @@
                             </div>
                         </div>
                         <div class="intro__video">
-                            <div class="intro__btn"><img src="img/icons/play_button.svg" alt="play button"></div>
+                            <div class="intro__btn"><span>&#9658;</span></div>
                         </div>
                     </div>
 
@@ -420,43 +422,44 @@
                     </div>
                 </div>
             </div>
-            <!-- FOOTER S -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__email email">
-                        <div class="email__logo"><img src="img/icons/Logo.svg" alt="logo"></div>
-                        <div class="email-block">
-                            <div class="email-input"><input placeholder="Sign up with your email" type="email" value="">
-                            </div>
-                            <div class="btn__main btn__footer">Subscribe</div>
-                        </div>
-                    </div>
-                    <nav class="nav">
-                        <ul class="nav__column">
-                            <li class="nav__link nav__link-head"><a href="">Help Menu</a></li>
-                            <li class="nav__link"><a href="">About</a></li>
-                            <li class="nav__link"><a href="">Features</a></li>
-                            <li class="nav__link"><a href="">Works</a></li>
-                            <li class="nav__link"><a href="">Career</a></li>
-                        </ul>
-                        <ul class="nav__column">
-                            <li class="nav__link nav__link-head"><a href="">Contact</a></li>
-                            <li class="nav__link"><a href="">Help & Support</a></li>
-                            <li class="nav__link"><a href="">Privacy Policy</a></li>
-                            <li class="nav__link"><a href="">Terms & Conditions</a></li>
-                        </ul>
-                        <ul class="nav__column">
-                            <li class="nav__link nav__link-head"><a href="">Product</a></li>
-                            <li class="nav__link"><a href="">Essential Landing Page</a></li>
-                            <li class="nav__link"><a href="">Alpha Dashboard Pro</a></li>
-                            <li class="nav__link"><a href="">Karnel Admin Dashboard</a></li>
-                            <li class="nav__link"><a href="">Gray UI Kit</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
         </div>
+        <!-- FOOTER S -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__email email">
+                    <div class="email__logo"><a href="#intro"><img src="img/icons/Logo.svg" alt="logo"></a></div>
+                    <div class="email-block">
+                        <div class="email-input"><input placeholder="Sign up with your email" type="email" value="">
+                        </div>
+                        <div class="btn__main btn__footer">Subscribe</div>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__column">
+                        <li class="nav__link nav__link-head"><a href="">Help Menu</a></li>
+                        <li class="nav__link"><a href="">About</a></li>
+                        <li class="nav__link"><a href="">Features</a></li>
+                        <li class="nav__link"><a href="">Works</a></li>
+                        <li class="nav__link"><a href="">Career</a></li>
+                    </ul>
+                    <ul class="nav__column">
+                        <li class="nav__link nav__link-head"><a href="">Contact</a></li>
+                        <li class="nav__link"><a href="">Help & Support</a></li>
+                        <li class="nav__link"><a href="">Privacy Policy</a></li>
+                        <li class="nav__link"><a href="">Terms & Conditions</a></li>
+                    </ul>
+                    <ul class="nav__column">
+                        <li class="nav__link nav__link-head"><a href="">Product</a></li>
+                        <li class="nav__link"><a href="">Essential Landing Page</a></li>
+                        <li class="nav__link"><a href="">Alpha Dashboard Pro</a></li>
+                        <li class="nav__link"><a href="">Karnel Admin Dashboard</a></li>
+                        <li class="nav__link"><a href="">Gray UI Kit</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>

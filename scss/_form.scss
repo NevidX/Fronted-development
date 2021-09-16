@@ -76,12 +76,18 @@
 	font-size: 46px;
 	line-height: 122%;
 	color: #001a49;
+	@media (max-width: $md3) {
+		font-size: 25px;
+	}
 }
 .subtitle {
 	font-family: Mulish;
 	font-size: 20px;
 	line-height: 150%;
 	color: #4f596a;
+	@media (max-width: $md3) {
+		font-size: 16px;
+	}
 }
 
 // DECORATION CIRCLES

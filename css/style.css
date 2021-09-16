@@ -200,11 +200,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #001a49;
 }
 
+@media (max-width: 479.98px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
 .subtitle {
   font-family: Mulish;
   font-size: 20px;
   line-height: 150%;
   color: #4f596a;
+}
+
+@media (max-width: 479.98px) {
+  .subtitle {
+    font-size: 16px;
+  }
 }
 
 .circle__purple {
@@ -384,8 +396,8 @@ h1, h2, h3, h4, h5, h6 {
 .burger__body {
   overflow: auto;
   width: 100%;
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
   background-color: rgba(233, 200, 241, 0.925);
   z-index: 10;
   position: absolute;
@@ -449,12 +461,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 319.98px) {
-  .intro__content {
-    padding-top: 15px;
-  }
-}
-
 .intro__block {
   max-width: 522px;
 }
@@ -464,9 +470,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 319.98px) {
+@media (max-width: 479.98px) {
   .intro__title {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
@@ -538,13 +544,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__btn {
+  position: relative;
   margin-top: 120px;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.intro__btn span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  font-size: 30px;
+  -webkit-transform: scaleY(1.4);
+          transform: scaleY(1.4);
+  color: #001a49;
 }
 
 .intro__btn:hover {
@@ -717,6 +738,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 150%;
   color: #4f596a;
+}
+
+@media (max-width: 479.98px) {
+  .topic-info__subtitle {
+    margin-bottom: 15px;
+  }
 }
 
 .curse__topic-duration {
@@ -1066,6 +1093,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 300px;
+  padding: 0 15px 0 15px;
 }
 
 .slider__button {
@@ -1322,8 +1350,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 479.98px) {
+  .email-block {
+    padding: 0 10px 0 10px;
+  }
+}
+
 .btn__footer {
   margin: 0;
+}
+
+@media (max-width: 319.98px) {
+  .btn__footer {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 320%;
+  }
 }
 
 body {

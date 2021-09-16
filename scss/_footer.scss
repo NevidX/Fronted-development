@@ -44,8 +44,17 @@
 	@media (max-width: $md2) {
 		width: 100%;
 	}
+	@media (max-width: $md3) {
+		padding: 0 10px 0 10px;
+	}
 }
 
 .btn__footer {
 	margin: 0;
+	@media (max-width: $md4) {
+		width: 110px;
+		height: 40px;
+		font-size: 12px;
+		line-height: 320%;
+	}
 }
