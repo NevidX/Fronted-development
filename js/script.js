@@ -1,5 +1,5 @@
 class BurgerGroup {
-	#contentWidth = [];
+	#contentWidth;
 	#trigger;
 	#body;
 	#content;
