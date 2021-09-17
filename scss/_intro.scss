@@ -84,6 +84,10 @@
 		top: 20px;
 		left: 23px;
 		font-size: 30px;
+		-ms-transform: scaleY(1.4); /* IE 9 */
+		-moz-transform: scaleY(1.4); /* Firefox */
+		-o-transform: scaleY(1.4); /* Opera */
+		-webkit-transform: scaleY(1.4); /* Safari */
 		transform: scaleY(1.4);
 		color: #001a49;
 	}
