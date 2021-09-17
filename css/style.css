@@ -1197,14 +1197,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .spoiler__body {
+  max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
+}
+
+.spoiler__body-active {
+  max-height: 100%;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
 }
 
 .spoiler__content {
   max-height: 350px;
   overflow-y: auto;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
 }
 
 .spoiler__content .spoiler__content-text {
