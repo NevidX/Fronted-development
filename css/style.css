@@ -1382,5 +1382,6 @@ body {
   font-family: Mulish;
   overflow-y: scroll;
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
