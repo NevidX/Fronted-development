@@ -56,11 +56,11 @@
 .spoiler__body {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.5s linear;
+	transition: all 0.5s ease-in-out;
 }
 .spoiler__body-active {
 	max-height: 100%;
-	transition: max-height 0.5s linear;
+	// transition: max-height 0.5s linear;
 }
 .spoiler__content {
 	max-height: 350px;
@@ -72,5 +72,6 @@
 		line-height: 162%;
 		padding-top: 10px;
 		color: #4f596a;
+		transition: all 0.5s linear;
 	}
 }
