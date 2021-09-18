@@ -1,14 +1,16 @@
 
+const spoilerHeader = document.querySelectorAll(".spoiler__header");
 const spoilerTrigger = document.querySelectorAll(".spoiler__trigger");
 const spoilerBody = document.querySelectorAll(".spoiler__body");
-const spoilerActiveTrigger = "spoiler__arrow-active" || null;
+const spoilerActiveTrigger = "spoiler__header-active" || null;
 const spoilerBodyStyle = "spoiler__body-active";
 const spoilerBodyWidth = "350px";
 
-spoilerTrigger.forEach((item, i) => {
-	let curentBody = (item.parentNode).nextElementSibling;
+spoilerHeader.forEach((item, i) => {
+	let curentBody = item.nextElementSibling;
 	curentBody.style.maxHeight = "0";
 	item.addEventListener("click", () => {
+
 		if (!(spoilerActiveTrigger === null)) {
 			item.classList.toggle(spoilerActiveTrigger);
 		}

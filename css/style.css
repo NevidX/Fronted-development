@@ -437,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro {
   position: relative;
-  min-height: 100vh;
+  height: 700px;
 }
 
 @media (max-width: 999.98px) {
@@ -1154,6 +1154,10 @@ h1, h2, h3, h4, h5, h6 {
       flex-shrink: 0;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1175,6 +1179,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 120%;
   margin-bottom: 7px;
+}
+
+.spoiler__header-active .spoiler__trigger {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .spoiler__trigger {

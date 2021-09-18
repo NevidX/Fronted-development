@@ -17,6 +17,7 @@
 	display: flex;
 	flex-shrink: 0;
 	flex-basis: 100%;
+	user-select: none;
 	align-items: center;
 	justify-content: space-between;
 	cursor: pointer;
@@ -29,6 +30,11 @@
 		font-size: 20px;
 		line-height: 120%;
 		margin-bottom: 7px;
+	}
+}
+.spoiler__header-active {
+	.spoiler__trigger {
+		transform: rotate(180deg);
 	}
 }
 .spoiler__trigger {
