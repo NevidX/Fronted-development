@@ -2,7 +2,7 @@
 const trigger = document.querySelectorAll(".burger__trigger");
 const body = document.querySelectorAll(".burger__body");
 const style = "active";
-const contentWidth = 100 + "vh";
+const contentWidth = "100vh";
 
 
 trigger.forEach((item, i) => {
